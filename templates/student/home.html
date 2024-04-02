@@ -1,0 +1,77 @@
+{% extends 'master.html' %}
+
+{% load static %}
+
+{% block title %}
+    
+{% endblock title %}
+
+{% block body %}
+<marquee behavior="" direction=""><a class="navbar-brand" href="#"><h2><span style="color: coral;">T</span>he <span style="color:coral;">V</span>aibhav <span style="color:coral;">A</span>cademy</h2></a></marquee>
+<div style="height: 400px; width: 100%; ">
+
+    <div style="height: 100%; width:40%; float:left;text-align:center"> <br><br>
+        <h2>Top rated IT Training Classes in Pune</h2><br>
+        <h3>Java, Selenium, Python, AWS, MERN Stack, Salesforce Courses with 100% Job Placement Support</h3><br>
+        <h5>Looking to become a Full Stack Developer, Software Engineer, Programmer, Tester, IT Consultant in Leading Software MNC's ?
+        </h5><br>
+
+        <a class="btn btn-primary " role="button" aria-disabled="true">Acess 3 Days Free  Demo Class</a>
+
+       
+    </div>
+
+    <div style="height: 100%; width:60% ; float:right"> <center><img src="{% static 'images/vaibhavlogo.png' %}" alt=""  height="58%" width="45%" > </div></center>
+    
+    </div><br><br>
+<center><h2>Most Popular IT Training Courses in Pune</h2>
+    
+    
+    <h4>Software Industry Offers High-Paying Jobs for the most demanding IT Courses - Java, Selenium, Python, AWS, Azure, Salesforce</h4>
+</center>
+    <br><br><br>
+
+<div class="card-group">
+    
+    <div class="card">
+      <img src="{% static 'images/python.jpg' %}" class="card-img-top" alt="..." style="height: 250px; ;">
+      <div class="card-body">
+        <h5 class="card-title">Python Programming Language</h5>
+        <p class="card-text">Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code. Python is a programming language  .</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> <br><br><br>
+
+        <a href="/python/" class="btn btn-primary " tabindex="-1" role="button" >Learn More</a>  
+
+        <a href="/registration/" class="btn btn-primary " tabindex="-1" role="button" >Enroll Now</a>
+
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'images/java.png' %}" class="card-img-top" alt="..."  style="height: 250px;">
+      <div class="card-body">
+        <h5 class="card-title">Java Programming Language</h5>
+        <p class="card-text">ava is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is intended to let application developers write once, and run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java was first released in 1995 and is widely used  </p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p><br><br><br>
+
+        <a href="/java/" class="btn btn-primary " tabindex="-1" role="button" >Learn More</a>  
+
+        <a href="/registration/" class="btn btn-primary" tabindex="-1" role="button" >Enroll Now</a>
+
+      </div>
+    </div>
+    <div class="card">
+      <img src="{%static 'images/aws.jpg' %}" class="card-img-top" alt="..."  style="height: 250px;">
+      <div class="card-body">
+        <h5 class="card-title">Aws Programming Language</h5>
+        <p class="card-text">Amazon Web Services (AWS), a subsidiary of Amazon, is a comprehensive and widely adopted cloud computing platform. It offers over 200 fully featured services across the globe, including data centers. Millions of customers, from startups to large enterprises and government agencies, utilize AWS to achieve cost savings, agility, and faster </p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p><br><br><br>
+
+        <a href="/aws/" class="btn btn-primary " tabindex="-1" role="button" >Learn More</a>  
+
+        <a href="/registration/" class="btn btn-primary " tabindex="-1" role="button" >Enroll Now</a>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}

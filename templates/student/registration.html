@@ -1,0 +1,59 @@
+{% extends 'master.html' %}
+
+
+{% block title %}
+    Registration
+{% endblock title %}
+
+{% block body %}
+<div class="container" style="width: 350px; margin-top:  70px;" >
+    <h2>Registration Form</h2>
+    <form method="post"> 
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="n" class="form-label">Name</label>
+          <input type="text" class="form-control" id="n" aria-describedby="emailHelp" placeholder="Enter Your Name" name="name">
+          
+        </div>
+        <div class="mb-3">
+            <label for="e1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="e1" aria-describedby="emailHelp" placeholder="Enter Your Email" name="email">
+            
+          </div>
+
+          <div class="mb-3">
+            <label for="c" class="form-label">City</label>
+            <input type="text" class="form-control" id="c" aria-describedby="emailHelp" placeholder="Enter Your city" name="city">
+            
+          </div>
+
+        
+
+        <div class="mb-3">
+            <label for="d"class="form-label">Degree</label>
+            <input type="text" class="form-control" id="d"  placeholder="Enter Your Degree" name="degree">
+            
+          </div>
+
+          <div class="mb-3">
+            <label for="py"class="form-label">Passing Year</label>
+            <input type="interger" class="form-control" id="py"  placeholder="Enter Your Passing Year " name="year">
+            
+          </div>
+
+
+          <div class="form-group">
+            <label for="c">Course</label><br>
+            <select name="course" id="">
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Aws">Aws</option>
+            </select>
+          
+          </div> <br>
+          <center>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form></center>
+</div>
+    
+{% endblock body %}

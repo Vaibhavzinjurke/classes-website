@@ -1,0 +1,62 @@
+{% extends 'master.html' %}
+
+{% block title %}
+    record
+{% endblock title %}
+
+{% block body %}
+
+<div class="container" style="width: 350px; margin-top:  70px;" >
+    <h2>Record</h2>
+    <form method="post"> 
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="n" class="form-label">Name</label>
+          <input type="text" class="form-control" id="n" aria-describedby="emailHelp" placeholder="Enter Your Name" name="name" value="{{data.name}}">
+          
+        </div>
+        <div class="mb-3">
+            <label for="e1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="e1" aria-describedby="emailHelp" placeholder="Enter Your Email" name="email" value="{{data.email}}">
+            
+          </div>
+
+          <div class="mb-3">
+            <label for="c" class="form-label">City</label>
+            <input type="text" class="form-control" id="c" aria-describedby="emailHelp" placeholder="Enter Your city" name="city" value="{{data.city}}">
+            
+          </div>
+
+        
+
+        <div class="mb-3">
+            <label for="d"class="form-label">Degree</label>
+            <input type="text" class="form-control" id="d"  placeholder="Enter Your Degree" name="degree" value="{{data.degree}}">
+            
+          </div>
+
+          <div class="mb-3">
+            <label for="py"class="form-label">Passing Year</label>
+            <input type="number" class="form-control" id="py"  placeholder="Enter Your Passing Year " name="year" value="{{data.year}}">
+            
+          </div>
+
+
+          <div class="form-group">
+            <label for="c">Course</label><br>
+            <select name="course" id="" value="{{data.course}}">
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Aws">Aws</option>
+            </select>
+          
+          </div> <br>
+          <center>
+        <button type="submit" class="btn btn-primary">Update</button>
+
+        <a href="/myaccount/delete/{{data.id}}" class="btn btn-danger">delete</a>
+      </form></center>
+
+</div>
+    
+{% endblock body %}

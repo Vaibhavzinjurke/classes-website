@@ -1,0 +1,17 @@
+{% extends 'master.html' %}
+
+
+{% block title %}
+    Placement
+{% endblock title %}
+
+{% block body %}
+{% for student in data %}
+<h3> 
+ {{student.name}} <br>
+ {{student.Designation}}
+ {{student.Location}}
+ {{student.Photo}} </h3>
+ <img src="{{student.photo.url}}" alt="" height="120px" width="120px"> <br> <br>
+ {% endfor %}
+{% endblock body %}
